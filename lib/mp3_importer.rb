@@ -6,7 +6,11 @@ class MP3Importer
   end
   
   def files
+<<<<<<< HEAD
     Dir.entries(self.path).select {|file| file.end_with?(".mp3")}
+=======
+    Dir.entries(self.path).select {|file| file.ends_with?(".mp3")}
+>>>>>>> 3fe509c910ae3ac8a913169a8a3e820bbb35f46c
   end
   
   def import 

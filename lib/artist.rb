@@ -21,11 +21,19 @@ class Artist
     end
   end
   
+<<<<<<< HEAD
   def self.find_or_create_by_name(artist_name)
     if self.find(artist_name)
       self.find(artist_name)
     else
       self.new(artist_name)
+=======
+  def find_or_create_by_name(artist_name)
+    if self.find(artist_name)
+      self.find(artist_name)
+    else
+      self.create(artist_name)
+>>>>>>> 3fe509c910ae3ac8a913169a8a3e820bbb35f46c
     end
   end
   
